@@ -36,5 +36,14 @@ gdf.set_crs(epsg=4326, inplace=True)  # Define o CRS original
 gdf = gdf.to_crs(epsg=3857)           # Converte para Web Mercator
 ``` 
 ---
-## 📫 Contato
-[![Linkedin: Leandro Ornelas](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link={https://www.linkedin.com/in/leandroornelas/}/)]({[Link](https://www.linkedin.com/in/leandroornelas/)})
+<p align="left">
+  <a href="mailto:leandro.nanndo@gmail.com" title="Gmail">
+    <img src="https://img.shields.io/badge/-Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+  <a href="https://www.linkedin.com/in/leandroornelas/" title="LinkedIn">
+    <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://api.whatsapp.com/send?phone=5534991949009" title="WhatsApp">
+    <img src="https://img.shields.io/badge/-WhatsApp-25d366?style=flat-square&labelColor=25d366&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
+  </a>
+</p>
