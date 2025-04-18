@@ -47,7 +47,6 @@ poligonos-bairros/
 ├── data/             # Arquivos de dados geográficos criado 
 ├── notebooks/        # Notebooks utilizados
 ├── output/           # Mapa gerado
-├── venv/             # Ambiente virtual Python 
 ├── requirements.txt  # Lista de bibliotecas necessárias
 ```
 
