@@ -34,3 +34,7 @@ As coordenadas foram definidas manualmente em latitude/longitude (EPSG:4326 - WG
 ```python
 gdf.set_crs(epsg=4326, inplace=True)  # Define o CRS original
 gdf = gdf.to_crs(epsg=3857)           # Converte para Web Mercator
+``` 
+---
+## 📫 Contato
+[![Linkedin: Leandro Ornelas](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link={https://www.linkedin.com/in/leandroornelas/}/)]({[Link](https://www.linkedin.com/in/leandroornelas/)})
