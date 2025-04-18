@@ -35,7 +35,58 @@ As coordenadas foram definidas manualmente em latitude/longitude (EPSG:4326 - WG
 gdf.set_crs(epsg=4326, inplace=True)  # Define o CRS original
 gdf = gdf.to_crs(epsg=3857)           # Converte para Web Mercator
 ``` 
+
 ---
+
+## 📁 Estrutura de Pastas do Projeto
+
+Abaixo está a organização adotada para manter o projeto modular e limpo:
+
+```
+poligonos-bairros/
+├── data/             # Arquivos de dados geográficos criado 
+├── notebooks/        # Notebooks utilizados
+├── output/           # Mapa gerado
+├── venv/             # Ambiente virtual Python 
+├── requirements.txt  # Lista de bibliotecas necessárias
+```
+
+> ⚠️ Observação: os notebooks devem sempre considerar os caminhos relativos para salvar arquivos, como `../data/arquivo.geojson` ou `../output/mapa.png`.
+
+---
+
+## 🚀 Como executar o projeto
+
+1. **Clone o repositório:**
+
+```bash
+git clone https://github.com/LeandroOrnelas/poligonos-bairros.git
+cd poligonos-bairros
+```
+
+2. **Crie e ative o ambiente virtual (Windows):**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. **Instale as dependências:**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Execute o notebook:**
+
+Abra o arquivo `notebooks/create-polygon.ipynb` no Jupyter ou VS Code e rode as células.
+
+📦 Os arquivos de saída serão gerados nas pastas:
+- `data/` → arquivos `.geojson`
+- `output/` → imagens `.png`
+
+---
+
 <p align="left">
   <a href="mailto:leandro.nanndo@gmail.com" title="Gmail">
     <img src="https://img.shields.io/badge/-Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white" alt="Gmail"/>
