@@ -86,6 +86,11 @@ Abra o arquivo `notebooks/create-polygon.ipynb` no Jupyter ou VS Code e rode as 
 
 ---
 
+## 📌 Autor
+
+Desenvolvido por **Leandro Ornelas**
+
+[![GitHub](https://img.shields.io/badge/GitHub-LeandroOrnelas-181717?style=flat&logo=github)](https://github.com/LeandroOrnelas)
 <p align="left">
   <a href="mailto:leandro.nanndo@gmail.com" title="Gmail">
     <img src="https://img.shields.io/badge/-Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white" alt="Gmail"/>
