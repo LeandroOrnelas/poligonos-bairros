@@ -41,7 +41,10 @@ Os seguintes mapas estão disponíveis:
 <h5><center>Demostração de um dos mapas</center></h5>
 
 
-![Mapa dos Terminais de Uberlândia](MapsPNG/mapa_TerminaisUberlandia-Projecao.png)
+<p align="center">
+  <img src="mapsPNG/mapa_TerminaisUberlandia-Projecao.png" width="700">
+</p>
+
 
 
 ---
