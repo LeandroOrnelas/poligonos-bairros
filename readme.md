@@ -37,9 +37,9 @@ Os seguintes mapas estão disponíveis:
 
 📸 Capturas de tela disponíveis em `MapsPNG/` para visualização rápida.
 
+<h5><center>Demostração de um dos mapas</center></h5>
 
 <p align="center">
-  <h5><center>Demostração de um dos mapas</center></h5>
   <img src="mapsPNG/mapa_TerminaisUberlandia-Projecao.png" width="700">
 </p>
 
