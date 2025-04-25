@@ -1,6 +1,6 @@
-# 🗺️ Mapeamento de Bairros de Uberlândia (MG) com Python e GeoPandas
+# 🗺️ Análise Espacial dos Bairros e Terminais de Ônibus de Uberlândia com Python
 
-Este projeto faz parte de um estudo prático com **Python**, envolvendo manipulação de dados geográficos e visualização de mapas.
+Este projeto vai além da criação manual de polígonos: ele explora também a distribuição de terminais de ônibus da cidade de Uberlândia, com visualizações interativas em HTML via Folium e exportação para PNG.
 
 O foco principal é a **criação manual de polígonos** representando os bairros de Uberlândia (MG), com classificação por **zona territorial** (Leste, Oeste, Norte, Sul ou Central), e sua **plotagem sobre mapas base** usando o `contextily`.
 
@@ -25,6 +25,21 @@ O foco principal é a **criação manual de polígonos** representando os bairro
 
 ---
 
+## 🌐 Mapas Interativos
+
+Os seguintes mapas estão disponíveis:
+
+- `📍 mapa_Uberlandia.html`: bairros coloridos por zona territorial
+- `🚏 mapa_terminais.html`: terminais de ônibus atuais
+- `🚧 mapa_obras.html`: terminais de ônibus atuais + terminal universitário em construção
+
+📁 Acesse os arquivos na pasta `MapsHTML/`.
+
+📸 Capturas de tela disponíveis em `MapsPNG/` para visualização rápida.
+
+---
+
+
 ## 🌍 Sobre a Reprojeção
 
 As coordenadas foram definidas manualmente em latitude/longitude (EPSG:4326 - WGS84). Para que os polígonos se alinhem corretamente com mapas base (como OpenStreetMap), é necessário reprojetar os dados para o sistema EPSG:3857 (Web Mercator).
@@ -44,10 +59,12 @@ Abaixo está a organização adotada para manter o projeto modular e limpo:
 
 ```
 poligonos-bairros/
-├── data/             # Arquivos de dados geográficos criado 
-├── notebooks/        # Notebooks utilizados
-├── output/           # Mapa gerado
-├── requirements.txt  # Lista de bibliotecas necessárias
+├── data/             # GeoJSON dos bairros
+├── notebooks/        # Jupyter Notebooks do projeto
+├── output/           # Imagens .png temporárias
+├── MapsHTML/         # Mapas interativos exportados em HTML
+├── MapsPNG/          # Capturas de tela dos mapas
+├── requirements.txt
 ```
 
 > ⚠️ Observação: os notebooks devem sempre considerar os caminhos relativos para salvar arquivos, como `../data/arquivo.geojson` ou `../output/mapa.png`.
@@ -82,7 +99,7 @@ Abra o arquivo `notebooks/create-polygon.ipynb` no Jupyter ou VS Code e rode as 
 
 📦 Os arquivos de saída serão gerados nas pastas:
 - `data/` → arquivos `.geojson`
-- `output/` → imagens `.png`
+- `MapsHTML/` → imagens `.html`
 
 ---
 
