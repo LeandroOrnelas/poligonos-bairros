@@ -1,81 +1,89 @@
-# 🗺️ Análise Espacial dos Bairros e Terminais de Ônibus de Uberlândia com Python
 
-Este projeto vai além da criação manual de polígonos: ele explora também a distribuição de terminais de ônibus da cidade de Uberlândia, com visualizações interativas em HTML via Folium e exportação para PNG.
+# 🗺️ Uberlândia GeoData
 
-O foco principal é a **criação manual de polígonos** representando os bairros de Uberlândia (MG), com classificação por **zona territorial** (Leste, Oeste, Norte, Sul ou Central), e sua **plotagem sobre mapas base** usando o `contextily`.
+Este projeto combina **a criação manual de polígonos** para os bairros de Uberlândia (MG) com a geração de **mapas interativos** mostrando:
+- Distribuição territorial dos bairros
+- Localização dos Terminais Urbanos
+- Localização das Unidades de Saúde Públicas
+
+Além de construir os dados espaciais do zero, o projeto foca em técnicas de manipulação, reprojeção e visualização de dados geográficos em Python.
 
 ---
 
 ## 🎯 Objetivos
 
-- Praticar a manipulação de dados espaciais em Python com **GeoPandas** e **Shapely**.
+- Praticar a manipulação de dados espaciais em Python com **GeoPandas**, **Shapely** e **Folium**.
 - Criar manualmente os contornos dos bairros via coordenadas geográficas (WKT).
-- Classificar os bairros por zona territorial.
-- Visualizar os dados em um mapa com **tiles do OpenStreetMap**.
+- Classificar os bairros por zona territorial (Leste, Oeste, Norte, Sul, Central).
+- Construir mapas interativos de análise territorial urbana.
+- Visualizar e exportar os dados em formatos HTML (interativo) e PNG (estático).
+
+> ℹ️ **Nota**: Embora existam ferramentas para obter polígonos automaticamente (como Overpass-turbo ou APIs do OpenStreetMap), neste projeto optamos pela criação manual dos bairros **para fins de estudo e prática de manipulação espacial em Python**.
 
 ---
 
-## 🧰 Tecnologias e Bibliotecas Utilizadas
+### 📚 Tecnologias & Ferramentas
 
-- **Python 3**
-- [GeoPandas](https://geopandas.org/)
-- [Shapely](https://shapely.readthedocs.io/)
-- [Contextily](https://contextily.readthedocs.io/)
-- [Matplotlib](https://matplotlib.org/)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![GeoPandas](https://img.shields.io/badge/GeoPandas-0769AD?style=flat&logo=python&logoColor=white)
+![Shapely](https://img.shields.io/badge/Shapely-34A853?style=flat&logo=python&logoColor=white)
+![Contextily](https://img.shields.io/badge/Contextily-FFC107?style=flat&logo=python&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=python&logoColor=white)
+![Folium](https://img.shields.io/badge/Folium-77B829?style=flat&logo=leaflet&logoColor=white)
+![Pillow](https://img.shields.io/badge/Pillow-563D7C?style=flat&logo=python&logoColor=white)
+
 
 ---
 
-## 🌐 Mapas Interativos
-
-Os seguintes mapas estão disponíveis:
+## 🌐 Mapas Gerados
 
 - `📍 mapa_Uberlandia.html`: bairros coloridos por zona territorial
-- `🚏 mapa_terminais.html`: terminais de ônibus atuais
-- `🚧 mapa_obras.html`: terminais de ônibus atuais + terminal universitário em construção
+- `🚏 mapa_TerminaisUberlandia.html`: terminais de ônibus
+- `🚧 mapa_TerminaisUberlandia-Projecao.html`: terminais de ônibus com terminal em construção
+- `🏥 mapa_SaudeUberlandia.html`: unidades de saúde públicas da cidade
 
-📁 Acesse os arquivos na pasta `MapsHTML/`.
+📁 **Arquivos HTML** estão na pasta `MapsHTML/`.  
+📸 **Imagens capturadas** estão na pasta `MapsPNG/`.
 
-📸 Capturas de tela disponíveis em `MapsPNG/` para visualização rápida.
+### Exemplos de Mapas
 
-<h5><center>Demostração de um dos mapas</center></h5>
+<h5><center>Terminais de ônibus Uberlândia</center></h5>
 
 <p align="center">
-  <img src="mapsPNG/mapa_TerminaisUberlandia-Projecao.png" width="700">
+  <img src="mapsPNG/mapa_TerminaisUberlandia.png" width="400"></p>
+  <h5><center>Unidades de saúde Uberlândia</center></h5>
+<p align="center">  
+  <img src="mapsPNG/mapa_SaudeUberlandia.png" width="400">
 </p>
-
-
 
 ---
 
+## 🌍 Sobre a Reprojeção de Dados
 
-## 🌍 Sobre a Reprojeção
-
-As coordenadas foram definidas manualmente em latitude/longitude (EPSG:4326 - WGS84). Para que os polígonos se alinhem corretamente com mapas base (como OpenStreetMap), é necessário reprojetar os dados para o sistema EPSG:3857 (Web Mercator).
-
-ℹ️ A conversão correta é feita com:
+As coordenadas foram desenhadas manualmente em EPSG:4326 (WGS84 - Latitude/Longitude).  
+Para sobrepor corretamente nos tiles OpenStreetMap, os dados são reprojetados para EPSG:3857 (Web Mercator).
 
 ```python
-gdf.set_crs(epsg=4326, inplace=True)  # Define o CRS original
-gdf = gdf.to_crs(epsg=3857)           # Converte para Web Mercator
+gdf.set_crs(epsg=4326, inplace=True)
+gdf = gdf.to_crs(epsg=3857)
 ``` 
 
 ---
 
 ## 📁 Estrutura de Pastas do Projeto
 
-Abaixo está a organização adotada para manter o projeto modular e limpo:
-
 ```
 poligonos-bairros/
 ├── data/             # GeoJSON dos bairros
-├── notebooks/        # Jupyter Notebooks do projeto
+├── notebooks/        # Notebooks de criação e análise de mapas
 ├── output/           # Imagens .png temporárias
 ├── MapsHTML/         # Mapas interativos exportados em HTML
 ├── MapsPNG/          # Capturas de tela dos mapas
-├── requirements.txt
+├── requirements.txt  # Dependências do projeto
+├── readme.md         # Documentação principal
 ```
 
-> ⚠️ Observação: os notebooks devem sempre considerar os caminhos relativos para salvar arquivos, como `../data/arquivo.geojson` ou `../output/mapa.png`.
+> ⚠️ Nota: todos os caminhos para leitura e escrita de arquivos são relativos.
 
 ---
 
@@ -92,7 +100,7 @@ cd poligonos-bairros
 
 ```bash
 python -m venv venv
-venv\Scripts\activate
+venv\Scriptsctivate
 ```
 
 3. **Instale as dependências:**
@@ -101,13 +109,11 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. **Execute o notebook:**
+4. **Execute os notebooks:**
 
-Abra o arquivo `notebooks/create-polygon.ipynb` no Jupyter ou VS Code e rode as células.
-
-📦 Os arquivos de saída serão gerados nas pastas:
-- `data/` → arquivos `.geojson`
-- `MapsHTML/` → imagens `.html`
+- `create-polygon.ipynb`: cria os polígonos dos bairros manualmente
+- `explorer-maps-SIT.ipynb`: gera mapas de terminais urbanos
+- `explorer-maps-SUS.ipynb`: gera mapas das unidades de saúde
 
 ---
 
@@ -128,4 +134,4 @@ Desenvolvido por **Leandro Ornelas**
   </a>
 </p>
 
-
+---
