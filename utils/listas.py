@@ -63,6 +63,14 @@ Dic_Terminal_Obra = {
 
 
 Dic_EstabelecimentoSaude = {
+    "Hospital de Clínicas da UFU": {
+        "Endereço": "Av. Pará, 1720 - Umuarama",
+        "Telefone": "(34) 3218-2111",
+        "Funcionamento": "24 horas",
+        "Categoria": "Hospital",
+        "lat": -18.882720535740216, 
+        "lon": -48.260230952015974 
+    },
     "Ambulatório de Moléstias Infecciosas – Herbert de Souza – IST/AIDS": {
         "Endereço": "Rua Avelino Jorge Nascimento, 15 – Roosevelt",
         "Telefone": "(34) 3215-2444",
