@@ -23,7 +23,7 @@ mapa = folium.Map(location=[-18.914, -48.275], zoom_start=12)
 ```
 
 **Documentação relacionada:**
-- 📚 [folium.Map](https://python-visualization.github.io/folium/latest/user_guide/quickstart.html#Map)
+- 📚 [folium.Map](https://python-visualization.github.io/folium/latest/user_guide/map.html)
 
 ---
 
@@ -35,9 +35,6 @@ Cada mapa recebe um título em HTML posicionado no topo, utilizando `Element` do
 titulo_html = "<h1 align='center' style='font-size:26px'><b>Título do Mapa</b></h1>"
 mapa.get_root().html.add_child(Element(titulo_html))
 ```
-
-**Documentação relacionada:**
-- 📚 [folium.Element](https://python-visualization.github.io/folium/latest/user_guide/elements.html)
 
 ---
 
@@ -68,10 +65,10 @@ Cada tipo de ponto de interesse (estabelecimentos de saúde, terminais urbanos, 
 - Informações adicionais são exibidas via tooltip ao passar o mouse.
 
 **Documentação relacionada:**
-- 📚 [folium-feature-group](https://python-visualization.github.io/folium/latest/user_guide/folium_features.html#featuregroup)
-- 📚 [folium-marker](https://python-visualization.github.io/folium/latest/user_guide/markers.html)
-- 📚 [folium-customicon](https://python-visualization.github.io/folium/latest/user_guide/markers.html#custom-icon)
-- 📚 [folium-tooltip](https://python-visualization.github.io/folium/latest/user_guide/markers.html#tooltip)
+- 📚 [folium-feature-group](https://python-visualization.github.io/folium/latest/user_guide/plugins/featuregroup_subgroup.html)
+- 📚 [folium-marker](https://python-visualization.github.io/folium/latest/getting_started.html)
+- 📚 [folium-customicon](https://python-visualization.github.io/folium/latest/user_guide/ui_elements/icons.html)
+- 📚 [folium-tooltip](https://python-visualization.github.io/folium/latest/user_guide/geojson/geojson_popup_and_tooltip.html)
 
 ---
 
