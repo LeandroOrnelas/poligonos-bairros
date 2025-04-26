@@ -1,3 +1,6 @@
+
+
+
 # 📝 Explicação Completa: Mapa de Unidades de Saúde - Uberlândia
 
 ---
@@ -10,9 +13,12 @@ O mapa é criado com centro em Uberlândia (`location=[-18.914, -48.275]`) e zoo
 mapa = folium.Map(location=[-18.914, -48.275], zoom_start=12)
 ```
 
+**Documentação relacionada:**
+- 📚 [folium.Map](https://python-visualization.github.io/folium/latest/user_guide/quickstart.html#Map)
+
 ---
 
-## ✍ 2. Adição de título
+## 📝 2. Adição de título
 
 Um título em HTML é adicionado ao topo do mapa usando `Element`.
 
@@ -20,6 +26,9 @@ Um título em HTML é adicionado ao topo do mapa usando `Element`.
 titulo_html = "<h1 align='center' style='font-size:26px'><b>Unidades de Saúde - Uberlândia</b></h1>"
 mapa.get_root().html.add_child(Element(titulo_html))
 ```
+
+**Documentação relacionada:**
+- 📚 [folium.Element](https://python-visualization.github.io/folium/latest/user_guide/elements.html)
 
 ---
 
@@ -37,6 +46,9 @@ folium.GeoJson(
 
 - A camada é adicionada com `control=False`, para não aparecer no menu de camadas.
 
+**Documentação relacionada:**
+- 📚 [folium-geojson](https://python-visualization.github.io/folium/latest/user_guide/geojson/geojson.html)
+
 ---
 
 ## 🏥 4. Agrupamento por Categoria
@@ -53,6 +65,9 @@ for nome, info in Dic_EstabelecimentoSaude.items():
 - Se a categoria não tiver ícone específico, usa-se um ícone padrão (`SaudePadrao.png`).
 - O `z_index_offset` controla quem fica visualmente acima em sobreposição de ícones.
 
+**Documentação relacionada:**
+- 📚 [folium-feature-group](https://python-visualization.github.io/folium/latest/user_guide/folium_features.html#featuregroup)
+
 ---
 
 ## 💬 5. Adição dos Marcadores
@@ -61,8 +76,13 @@ Cada unidade de saúde é adicionada ao seu grupo de categoria.
 
 O marcador inclui:
 - Latitude/Longitude
-- Tooltip personalizado com Nome, Endereço, Funcionamento e Categoria
+- Tooltip personalizado com Nome, Endereço, Funcionamento e Categoria (exibido ao passar o mouse)
 - Ícone específico para o tipo de unidade
+
+**Documentação relacionada:**
+- 📚 [folium-marker](https://python-visualization.github.io/folium/latest/user_guide/markers.html)
+- 📚 [folium-customicon](https://python-visualization.github.io/folium/latest/user_guide/markers.html#custom-icon)
+- 📚 [folium-tooltip](https://python-visualization.github.io/folium/latest/user_guide/markers.html#tooltip)
 
 ---
 
@@ -76,6 +96,9 @@ folium.LayerControl(collapsed=False, position='topright').add_to(mapa)
 
 - O menu aparece expandido por padrão (`collapsed=False`).
 
+**Documentação relacionada:**
+- 📚 [folium-layer-control](https://python-visualization.github.io/folium/latest/user_guide/ui_elements/layer_control.html)
+
 ---
 
 ## 🗃️ 7. Exportação do mapa
@@ -88,7 +111,7 @@ mapa.save("../MapsHTML/mapa_SaudeUberlandia.html")
 
 ---
 
-# 📖     Conceitos Importantes Utilizados
+# 📖 Conceitos Importantes Utilizados
 
 | Conceito             | Explicação                                                                 |
 |:---------------------|:--------------------------------------------------------------------------|
@@ -110,6 +133,8 @@ mapa.save("../MapsHTML/mapa_SaudeUberlandia.html")
 - O fundo OpenStreetMap foi configurado para não ser desativável.
 - A camada de bairros também é fixa (não desmarcável).
 - O projeto pode ser facilmente expandido para adicionar novas categorias de unidades ou agrupar zonas por cor ou tipo de serviço prestado.
+
+---
 
 ---
 <p align="left">
