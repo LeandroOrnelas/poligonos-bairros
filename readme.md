@@ -100,7 +100,7 @@ cd poligonos-bairros
 
 ```bash
 python -m venv venv
-venv\Scriptsctivate
+venv\Scripts\activate
 ```
 
 3. **Instale as dependências:**
