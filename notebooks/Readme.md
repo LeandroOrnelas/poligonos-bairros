@@ -23,7 +23,7 @@ mapa = folium.Map(location=[-18.914, -48.275], zoom_start=12)
 ```
 
 **Documentação relacionada:**
-- 📚 <a href="https://python-visualization.github.io/folium/latest/user_guide/map.html" target="_blank">folium.Map</a>
+- 📚 [folium.Map](https://python-visualization.github.io/folium/latest/user_guide/map.html)
 
 ---
 
