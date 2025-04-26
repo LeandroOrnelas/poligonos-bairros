@@ -132,6 +132,3 @@ Desenvolvido por **Leandro Ornelas**
     <img src="https://img.shields.io/badge/Linkedin-0e76a8?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
 </p>
-
-
----
