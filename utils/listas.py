@@ -1,3 +1,8 @@
+
+# Centraliza Mapa Uberlandia
+centraliza_udi = -18.933551379794125, -48.27580804079593
+
+
 # Dicicionarios dos terminais
 
 Dic_Terminais = {
