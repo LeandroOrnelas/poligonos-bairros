@@ -1,5 +1,11 @@
-# Ignorar toda a pasta de dados brutos
-data/
+#Ignorar arquivos bases
+*.parquet
+*.zip
+*.xlsx
+*.xls
+*.csv
+*.gpkg
+
 
 # Ignorar arquivos do IBGE específicos (se preferir granularidade)
 # MG_Malha_Preliminar_2022.gpkg
