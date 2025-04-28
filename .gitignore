@@ -1,1 +1,25 @@
+# Ignorar toda a pasta de dados brutos
+data/
+
+# Ignorar arquivos do IBGE específicos (se preferir granularidade)
+# MG_Malha_Preliminar_2022.gpkg
+# Agregados_preliminares_por_setores_censitarios_BR.xlsx
+# 3170206_UBERLÂNDIA.csv
+
+# Ignorar Jupyter checkpoints (caso esteja usando notebooks)
+.ipynb_checkpoints/
+
+# Ignorar arquivos temporários do sistema
+*.DS_Store
+Thumbs.db
+
+# Ignorar ambientes virtuais Python
 .venv/
+env/
+venv/
+
+# Ignorar pastas de outputs, se existir
+outputs/
+
+# Ignorar backups
+*.bak
