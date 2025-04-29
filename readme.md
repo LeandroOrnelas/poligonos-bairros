@@ -125,7 +125,7 @@ Desenvolvido por **Leandro Ornelas**
   <a href="https://github.com/LeandroOrnelas" title="GitHub">
     <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="mailto:leandro.nanndo@gmail.com" title="Gmail">
+  <a href="mailto:leandromornelas@gmail.com" title="Gmail">
     <img src="https://img.shields.io/badge/Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
   <a href="https://www.linkedin.com/in/leandroornelas/" title="LinkedIn">
