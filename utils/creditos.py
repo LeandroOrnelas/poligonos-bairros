@@ -15,7 +15,7 @@ creditos_html = """
     ">
         Desenvolvido por: Leandro Ornelas 
         <a href="https://github.com/LeandroOrnelas" target="_blank" style="text-decoration: none; color: #333;">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width:18; height:18px; vertical-align:middle;">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width:18px; height:18px; vertical-align:middle;">
         </a>
     </div>
 """
