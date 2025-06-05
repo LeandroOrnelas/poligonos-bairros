@@ -115,6 +115,12 @@ pip install -r requirements.txt
 - `explorer-maps-SIT.ipynb`: gera mapas de terminais urbanos
 - `explorer-maps-SUS.ipynb`: gera mapas das unidades de saúde
 
+5. **Execute os testes:**
+
+```bash
+pytest
+```
+
 ---
 
 ## 📌 Sobre o Autor
