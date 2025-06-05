@@ -42,8 +42,8 @@ Além de construir os dados espaciais do zero, o projeto foca em técnicas de ma
 - `🚧 mapa_TerminaisUberlandia-Projecao.html`: terminais de ônibus com terminal em construção
 - `🏥 mapa_SaudeUberlandia.html`: unidades de saúde públicas da cidade
 
-📁 **Arquivos HTML** estão na pasta `MapsHTML/`.  
-📸 **Imagens capturadas** estão na pasta `MapsPNG/`.
+📁 **Arquivos HTML** estão na pasta `mapsHTML/`.  
+📸 **Imagens capturadas** estão na pasta `mapsPNG/`.
 
 ### Exemplos de Mapas
 
@@ -77,8 +77,8 @@ poligonos-bairros/
 ├── data/             # GeoJSON dos bairros
 ├── notebooks/        # Notebooks de criação e análise de mapas
 ├── output/           # Imagens .png temporárias
-├── MapsHTML/         # Mapas interativos exportados em HTML
-├── MapsPNG/          # Capturas de tela dos mapas
+├── mapsHTML/         # Mapas interativos exportados em HTML
+├── mapsPNG/          # Capturas de tela dos mapas
 ├── requirements.txt  # Dependências do projeto
 ├── readme.md         # Documentação principal
 ```
