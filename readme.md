@@ -25,13 +25,12 @@ Além de construir os dados espaciais do zero, o projeto foca em técnicas de ma
 ### 📚 Tecnologias & Ferramentas
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![GeoPandas](https://img.shields.io/badge/GeoPandas-0769AD?style=flat&logo=python&logoColor=white)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=fff)](#)
 ![Shapely](https://img.shields.io/badge/Shapely-34A853?style=flat&logo=python&logoColor=white)
 ![Contextily](https://img.shields.io/badge/Contextily-FFC107?style=flat&logo=python&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=python&logoColor=white)
+	[![Matplotlib](https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff)](#)
 ![Folium](https://img.shields.io/badge/Folium-77B829?style=flat&logo=leaflet&logoColor=white)
 ![Pillow](https://img.shields.io/badge/Pillow-563D7C?style=flat&logo=python&logoColor=white)
-
 
 ---
 
@@ -135,6 +134,6 @@ Desenvolvido por **Leandro Ornelas**
     <img src="https://img.shields.io/badge/Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
   <a href="https://www.linkedin.com/in/leandroornelas/" title="LinkedIn">
-    <img src="https://img.shields.io/badge/Linkedin-0e76a8?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin-white&logoColor=fff" alt="LinkedIn"/>
   </a>
 </p>
